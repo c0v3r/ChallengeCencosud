@@ -55,7 +55,7 @@ public class LoginPageDefinitions {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='Your feed']")));
 
         Assert.assertTrue(mobileDriver.findElementByXPath("//android.widget.TextView[@text='Your feed']").isDisplayed(),
-                "Titles of the website do not match");
+                "Title does not match");
     }
 
     @Then("User should be able to see error message {string}")
