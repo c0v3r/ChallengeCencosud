@@ -1,9 +1,5 @@
 Feature: Login to Cenco Mobile App
 
-  Background:
-    Given User launches the application
-
-
   @InvalidCredentials
   Scenario Outline: Login with invalid credentials
     When User enters username as "<username>" and password as "<password>"
